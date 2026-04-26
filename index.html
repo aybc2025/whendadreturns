@@ -84,7 +84,7 @@
       const isSecure = location.protocol === 'https:';
 
       if (isSecure || isLocalhost) {
-        navigator.serviceWorker.register('/service-worker.js')
+        navigator.serviceWorker.register('./service-worker.js')
           .then(() => {
             document.getElementById("debug").innerText = "Service Worker registered";
           })
